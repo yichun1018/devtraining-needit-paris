@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="DELETE">
+        <active>true</active>
+        <condition_script/>
+        <description/>
+        <event_name>x_58872_needit.recordsDeletion</event_name>
+        <name>send deleted incident to AF</name>
+        <order>100</order>
+        <script><![CDATA[var number = event.parm1;
+gs.log("script action is being triggered.");
+gs.info("this is the number of deleted record: " + number);
+//try {
+ //var r = new sn_ws.RESTMessageV2('x_58872_needit.UpdateInfo', 'POST method');
+// r.setStringParameterNoEscape('number', number);
+//		gs.info("The number of instance being updated is" + number);
+//override authentication profile 
+//authentication type ='basic'/ 'oauth2'
+//r.setAuthenticationProfile(authentication type, profile name);
+
+//set a MID server name if one wants to run the message on MID
+//r.setMIDServer('MY_MID_SERVER');
+
+//if the message is configured to communicate through ECC queue, either
+//by setting a MID server or calling executeAsync, one needs to set skip_sensor
+//to true. Otherwise, one may get an intermittent error that the response body is null
+//r.setEccParameter('skip_sensor', true);
+
+// var response = r.execute();
+// var responseBody = response.getBody();
+// var httpStatus = response.getStatusCode();
+//}
+//catch(ex) {
+// var message = ex.message;
+//}
+]]></script>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-21 18:22:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5892179e2fb12050d489265df699b66a</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>send deleted incident to AF</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sysevent_script_action_5892179e2fb12050d489265df699b66a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-22 15:44:13</sys_updated_on>
+    </sysevent_script_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>05f7db56db786fc08264f70fbf96191b</instance_id>
+        <instance_name>dev71408</instance_name>
+        <name>sysevent_script_action_5892179e2fb12050d489265df699b66a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sysevent_script_action"&gt;&lt;sysevent_script_action action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;condition_script/&gt;&lt;description/&gt;&lt;event_name&gt;x_58872_needit.recordsDeletion&lt;/event_name&gt;&lt;name&gt;send deleted incident to AF&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[var number = event.parm1;
+gs.log("script action is being triggered.");
+gs.info("this is the number of deleted record: " + number);
+//try {
+ //var r = new sn_ws.RESTMessageV2('x_58872_needit.UpdateInfo', 'POST method');
+// r.setStringParameterNoEscape('number', number);
+//		gs.info("The number of instance being updated is" + number);
+//override authentication profile 
+//authentication type ='basic'/ 'oauth2'
+//r.setAuthenticationProfile(authentication type, profile name);
+
+//set a MID server name if one wants to run the message on MID
+//r.setMIDServer('MY_MID_SERVER');
+
+//if the message is configured to communicate through ECC queue, either
+//by setting a MID server or calling executeAsync, one needs to set skip_sensor
+//to true. Otherwise, one may get an intermittent error that the response body is null
+//r.setEccParameter('skip_sensor', true);
+
+// var response = r.execute();
+// var responseBody = response.getBody();
+// var httpStatus = response.getStatusCode();
+//}
+//catch(ex) {
+// var message = ex.message;
+//}
+]]&gt;&lt;/script&gt;&lt;synchronous&gt;false&lt;/synchronous&gt;&lt;sys_class_name&gt;sysevent_script_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-01-21 18:22:00&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;5892179e2fb12050d489265df699b66a&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;send deleted incident to AF&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_script_action_5892179e2fb12050d489265df699b66a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-01-22 15:44:13&lt;/sys_updated_on&gt;&lt;/sysevent_script_action&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1237462645</payload_hash>
+        <record_name>send deleted incident to AF</record_name>
+        <reverted_from/>
+        <source>0c5a5e282ff4a010442990bcf699b686</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-22 15:44:13</sys_created_on>
+        <sys_id>e839b3a62fbd2050d489265df699b6fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1772ac471b90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-22 15:44:13</sys_updated_on>
+        <type>Script Action</type>
+        <update_guid>2439b3a649bd20501dc05734fe9d86fe</update_guid>
+        <update_guid_history>2439b3a649bd20501dc05734fe9d86fe:1237462645,d1d96f6e317d205004ec826dac96a2b1:-2030397067,80812f2a957d20509cf87a2982fdc979:-1950425356,82406fe67f7d205099dcc9025e6bc9b3:291096690,6010ebe6177d2050b32d1567ef89f479:-226805709,864476aa93f9205016180f2fbef11f88:-1335279453,5803f26a87f920509ca344edb80f22c5:1495120126,d2b3d79e0ab12050cd215ec1c378288f:146309762</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-22 15:49:08</sys_created_on>
+        <sys_db_object display_value="" name="sysevent_script_action">sysevent_script_action</sys_db_object>
+        <sys_id>824abf1ad78d4d809b021b8b20274840</sys_id>
+        <sys_metadata>5892179e2fb12050d489265df699b66a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>send deleted incident to AF</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sysevent_script_action_5892179e2fb12050d489265df699b66a</sys_update_name>
+        <sys_update_version display_value="sysevent_script_action_5892179e2fb12050d489265df699b66a">e839b3a62fbd2050d489265df699b6fe</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-22 15:49:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
